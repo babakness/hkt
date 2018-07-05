@@ -12,8 +12,18 @@ export interface HKT3<URI, U, L, A> extends HKT2<URI, L, A> {
   readonly _U: U
 }
 
+// type URI = typeof URI
+declare global {
+  interface Array<T> {
+    _URI: 'Array'
+    _A: T
+  }
+}
+
 // type-level dictionaries for HKTs
-export interface URI2HKT<A> {}
+export interface URI2HKT<A> {
+  'Array': Array<A>
+}
 export interface URI2HKT2<L, A> {}
 export interface URI2HKT3<U, L, A> {}
 
