@@ -1,0 +1,30 @@
+{
+  "name": "soultrain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava-ts",
+    "test-watch": "npm run test -- --watch",
+    "build": "tsc"
+  },
+  "ava": {
+    "compileEnhancements": false,
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "ava-ts": "^0.24.6",
+    "ts-node": "^7.0.0",
+    "tsc": "^1.20150623.0",
+    "tsc-node": "^0.0.3",
+    "typescript": "^2.9.2"
+  }
+}
