@@ -1,9 +1,9 @@
 {
   "name": "hkt",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "lib/hkt.js",
-  "types" : "lib/hkt.d.ts",
+  "types": "lib/hkt.d.ts",
   "scripts": {
     "test": "ava-ts",
     "test-watch": "npm run test -- --watch",
